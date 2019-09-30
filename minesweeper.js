@@ -1,8 +1,27 @@
 document.addEventListener('DOMContentLoaded', startGame)
 
 // Define your `board` object here!
-// var board = 
-
+var board = {
+  cells: [
+    
+    {row:0, col:0, isMine: Boolean, hidden: true},
+    {row:0, col:1, isMine: Boolean, hidden: true},
+    {row:0, col:2, isMine: Boolean, hidden: true},
+    {row:0, col:3, isMine: Boolean, hidden: true},
+    {row:1, col:0, isMine: Boolean, hidden: true},
+    {row:1, col:1, isMine: Boolean, hidden: true},
+    {row:1, col:2, isMine: Boolean, hidden: true},
+    {row:1, col:3, isMine: Boolean, hidden: true},
+    {row:2, col:0, isMine: Boolean, hidden: true},
+    {row:2, col:1, isMine: Boolean, hidden: true},
+    {row:2, col:2, isMine: Boolean, hidden: true},
+    {row:2, col:3, isMine: Boolean, hidden: true},
+    {row:3, col:0, isMine: Boolean, hidden: true},
+    {row:3, col:1, isMine: Boolean, hidden: true},
+    {row:3, col:2, isMine: Boolean, hidden: true},
+    {row:3, col:3, isMine: Boolean, hidden: true}
+    ]
+  }
 function startGame () {
   // Don't remove this function call: it makes the game work!
   lib.initBoard()
